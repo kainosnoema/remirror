@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 overrides:
   eslint-plugin-react-hooks: 4.4.0
+  '@testing-library/dom': '>=8.12.0'
   postcss: '>= 8.0.0'
 
 importers:
@@ -41,7 +42,7 @@ importers:
       '@microsoft/api-extractor': ^7.18.17
       '@preconstruct/cli': ^2.1.5
       '@size-limit/preset-big-lib': ^6.0.3
-      '@testing-library/dom': ^8.12.0
+      '@testing-library/dom': '>=8.12.0'
       '@testing-library/jest-dom': ^5.16.3
       '@testing-library/react-hooks': ^7.0.2
       '@testing-library/user-event': ^14.0.4
@@ -281,7 +282,7 @@ importers:
       '@remirror/core-types': ^1.0.4
       '@remirror/core-utils': ^1.1.7
       '@remirror/pm': ^1.0.15
-      '@testing-library/dom': ^8.12.0
+      '@testing-library/dom': '>=8.12.0'
       '@types/prosemirror-schema-basic': ^1.0.2
       '@types/prosemirror-test-builder': ^1.0.2
       '@types/stringify-object': ^3.3.1
@@ -321,7 +322,7 @@ importers:
       '@remirror/dom': ^1.0.25
       '@remirror/pm': ^1.0.15
       '@remirror/preset-core': ^1.0.24
-      '@testing-library/dom': ^8.12.0
+      '@testing-library/dom': '>=8.12.0'
       '@types/node': ^16.3.3
       '@types/sanitize-html': ^2.3.2
       jest: ^27.0.6
@@ -10011,33 +10012,6 @@ packages:
       defer-to-connect: 2.0.1
     dev: false
 
-  /@testing-library/dom/7.31.2:
-    resolution: {integrity: sha512-3UqjCpey6HiTZT92vODYLPxTBWlM8ZOOjr3LX5F37/VRipW2M1kX6I/Cm4VXzteZqfGfagg8yXywpcOgQBlNsQ==}
-    engines: {node: '>=10'}
-    dependencies:
-      '@babel/code-frame': 7.15.8
-      '@babel/runtime': 7.15.4
-      '@types/aria-query': 4.2.2
-      aria-query: 4.2.2
-      chalk: 4.1.2
-      dom-accessibility-api: 0.5.9
-      lz-string: 1.4.4
-      pretty-format: 26.6.2
-    dev: false
-
-  /@testing-library/dom/8.10.1:
-    resolution: {integrity: sha512-rab7vpf1uGig5efWwsCOn9j4/doy+W3VBoUyzX7C4y77u0wAckwc7R8nyH6e2rw0rRzKJR+gWPiAg8zhiFbxWQ==}
-    engines: {node: '>=12'}
-    dependencies:
-      '@babel/code-frame': 7.15.8
-      '@babel/runtime': 7.15.4
-      '@types/aria-query': 4.2.2
-      aria-query: 5.0.0
-      chalk: 4.1.2
-      dom-accessibility-api: 0.5.9
-      lz-string: 1.4.4
-      pretty-format: 27.3.1
-
   /@testing-library/dom/8.12.0:
     resolution: {integrity: sha512-rBrJk5WjI02X1edtiUcZhgyhgBhiut96r5Jp8J5qktKdcvLcZpKDW8i2hkGMMItxrghjXuQ5AM6aE0imnFawaw==}
     engines: {node: '>=12'}
@@ -10050,7 +10024,6 @@ packages:
       dom-accessibility-api: 0.5.9
       lz-string: 1.4.4
       pretty-format: 27.3.1
-    dev: false
 
   /@testing-library/jest-dom/5.16.3:
     resolution: {integrity: sha512-u5DfKj4wfSt6akfndfu1eG06jsdyA/IUrlX2n3pyq5UXgXMhXY+NJb8eNK/7pqPWAhCKsCGWDdDO0zKMKAYkEA==}
@@ -10138,7 +10111,7 @@ packages:
       react-dom: ^18.0.0
     dependencies:
       '@babel/runtime': 7.15.4
-      '@testing-library/dom': 8.10.1
+      '@testing-library/dom': 8.12.0
       '@types/react-dom': 17.0.14
       react: 18.0.0
       react-dom: 18.0.0_react@18.0.0
@@ -10152,7 +10125,7 @@ packages:
       react-dom: ^18.0.0
     dependencies:
       '@babel/runtime': 7.15.4
-      '@testing-library/dom': 8.10.1
+      '@testing-library/dom': 8.12.0
       '@types/react-dom': 17.0.14
       react: 18.0.0
 
@@ -23057,7 +23030,7 @@ packages:
       playwright:
         optional: true
     dependencies:
-      '@testing-library/dom': 7.31.2
+      '@testing-library/dom': 8.12.0
       playwright: 1.16.2
       wait-for-expect: 3.0.2
     dev: false
