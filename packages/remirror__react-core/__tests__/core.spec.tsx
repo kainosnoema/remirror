@@ -41,7 +41,9 @@ test('can `suppressHydrationWarning` without breaking', () => {
     <Remirror
       manager={createReactManager([])}
       label={label}
-      {...handlers}
+      onChange={handlers.onChange}
+      onBlur={handlers.onBlur}
+      onFocus={handlers.onFocus}
       suppressHydrationWarning={true}
       autoRender='start'
     />,
@@ -79,7 +81,9 @@ describe('basic functionality', () => {
     const { getByLabelText } = strictRender(
       <Remirror
         label={label}
-        {...handlers}
+        onChange={handlers.onChange}
+        onBlur={handlers.onBlur}
+        onFocus={handlers.onFocus}
         manager={createReactManager([], { stringHandler: 'html' })}
         autoRender='start'
       >

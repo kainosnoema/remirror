@@ -12,7 +12,7 @@ import {
   useAttrs,
   useChainedCommands,
   useCurrentSelection,
-  useExtension,
+  useExtensionCallback,
   useRemirror,
   useUpdateReason,
 } from '@remirror/react';
@@ -21,17 +21,19 @@ function useLinkShortcut() {
   const [linkShortcut, setLinkShortcut] = useState<ShortcutHandlerProps | undefined>();
   const [isEditing, setIsEditing] = useState(false);
 
-  useExtension(
+  useExtensionCallback(
     LinkExtension,
-    ({ addHandler }) =>
-      addHandler('onShortcut', (props) => {
-        if (!isEditing) {
-          setIsEditing(true);
-        }
+    useCallback(
+      ({ addHandler }) =>
+        addHandler('onShortcut', (props) => {
+          if (!isEditing) {
+            setIsEditing(true);
+          }
 
-        return setLinkShortcut(props);
-      }),
-    [isEditing],
+          return setLinkShortcut(props);
+        }),
+      [isEditing],
+    ),
   );
 
   return { linkShortcut, isEditing, setIsEditing };
