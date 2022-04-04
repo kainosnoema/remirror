@@ -44,7 +44,7 @@
     "@remirror/dom": "^1.0.25",
     "@remirror/pm": "^1.0.15",
     "@remirror/preset-core": "^1.0.24",
-    "@testing-library/dom": "^8.1.0",
+    "@testing-library/dom": "^8.12.0",
     "@types/sanitize-html": "^2.3.2",
     "jest-prosemirror": "^1.0.20",
     "jest-snapshot": "^27.0.6",
